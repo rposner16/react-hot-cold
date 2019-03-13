@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: 4bfPLC/szeFoZpnsm9bLHkWTdTlKarfS4XFk/hk89ngKHMK2+mN6l8sxZRyUhT9kObKU8TyiX5cIpL/a8Tjkk5TusICmB4hd5MkDSd0DDwtVR2V9B3zxJwO8B5O6MFWVY/7vgsHm4S69AwX+z9Ws294UtW6mGObya/kPMiR0cL+bCbVFfQtKEH+JPH/bvhcqTDe1OYN6i1aVkKtLZhi0N22lcAZFhBfy0OyhyCQano1jzDtQU7nnDvYWBmzJvIT+DwQBUcxMGoTBnzPjGQK0UqilzpRxeK5UIewTE5bbLK3LN9XuxUnZFhYMzcCDoMyUjemF2Q7VIeu6FwnJIw1DtF50Xa7B65xgBMtUQOznibMx9BRP2NJcgwSahYPK5t0Gq+cActDR05jZ1VnevTuDkp8UUQZzkiN6jTEXZ17DZEa/gqGyez/8fN9ozd2BrEmcWKmAxjZ3UYlOfku8ZFZs2BhvCD3a+MBprKZQvfbZc+w3JAN76aXizRt4NeuThG6RNuTo+X5eBQ+B8TGFvIUhMk/wi8SdKwaGAS0gSlx1rzp99yz5WgdSBjSrmSwqr3PT9eNiD/K17jqJxKetIFx5szgfFJncjPb8+Zv5Twbsjwyi1E7idGP49L5g9NS6NuZ++NmIyyhaNkiGngYJWuTU0YJMSC5WpCrGxZ5APLSndh0=
+  app: blooming-island-64395
+  on:
+    repo: rposner16/react-hot-cold
